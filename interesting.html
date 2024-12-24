@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Interesting</title>
+    <link rel="stylesheet" href="interesting_style.css">
+    <script src="function.js"></script>
+</head>
+
+<body oncontextmenu="showCustomMenu(true,event.clientX, event.clientY); return false;" onclick="handleClick(event);">
+    <header>
+        <div class="cont">
+            <div class="item item_1">
+                <div class="profile">
+                    <img src="img/profile.jpg" alt="Profile">
+                </div>
+            </div>
+
+            <div class="item item_2">
+                <p class="header-text">
+                    Ternopil National Technical University Ivan Pulyuy<br>Faculty of computer and
+                    information systems
+                    and software engineering<br>Department of cyber security<br><br>Personal page<br>Nazar
+                    Marteniuk<br>Group SB-31
+                </p>
+            </div>
+
+            <div class="item item_3">
+                <div class="header-images">
+                    <img src="img/TNTU_Logo.png" alt="Image 1">
+                    <img src="img/FIS_Logo.jpg" alt="Image 2">
+                    <img src="img/Kaf_Logo.jpg" alt="Image 3">
+                </div>
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="index.html" class="btn">Main</a></li>
+                        <li><a href="biography.html" class="btn">Biography</a></li>
+                        <li><a href="group.html" class="btn">My group</a></li>
+                        <li><a href="hobby.html" class="btn">Hobby</a></li>
+                        <li><a href="interesting.html" class="btn">Interesting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <img src="img/OIG.axRTuh.jpg" alt="Background Image" class="bg-image">
+        <div class="banner-text">
+            <h1 class="animated-text">New technologies change our lives every day. Join the IT community to learn about the latest trends and innovations.</h1>
+            <h2 class="animated-text">The speed of development of the IT industry is extremely high. Learn new technologies and improve your skills to keep up with today's job market demands.</h2>
+            <h3 class="animated-text">IT is a field with endless possibilities. Software development, data analysis, cyber security and much more - choose your industry and grow with us.</h3>
+        </div>
+        <img src="img/toText1.png" alt="Image 1" class="animated-image1">
+        <img src="img/toText2.png" alt="Image 2" class="animated-image2">
+        <img src="img/toText3.png" alt="Image 3" class="animated-image3">
+    </div>
+    <div class="content-color">
+        <div class="content">
+            <h1>Interesting</h1>
+            <ul class="info">
+                <li class="article">
+                    <img src="img/1.png" class="article-image">
+                    <div class="article-content">
+                        <h2>GitHub Sponsors</h2>
+                        <p>
+                            In 2019, GitHub launched a new feature called "GitHub Sponsors". This feature allows you to
+                            sponsor open source software
+                            developers and support the development of open source projects. This is a big win for
+                            developers, who can get paid for
+                            their work, and for open source projects, which get new development tools.
+                        </p>
+                    </div>
+                </li>
+                <li class="article">
+                    <img src="img/2.jpg" class="article-image">
+                    <div class="article-content">
+                        <h2>Hacktoberfest</h2>
+                        <p>
+                            It is an annual event held in October each year to support open source software and foster the
+                            development of the
+                            developer community. As part of this event, developers can contribute to the open source of
+                            various projects and receive
+                            awards and prizes for their work.
+                        </p>
+                    </div>
+                </li>
+                <li class="article">
+                    <img src="img/3.png" class="article-image">
+                    <div class="article-content">
+                        <h2>Google Summer of Code</h2>
+                        <p>
+                            This is a student support program launched by Google. Under this program, students from all over
+                            the world can receive a
+                            scholarship from Google and join open source projects to contribute to the development of
+                            software. This gives students
+                            the opportunity to gain experience in real projects and interact with other developers, as well
+                            as gain useful skills
+                            and knowledge in software engineering.
+                        </p>
+                    </div>
+                </li>
+                <li class="article">
+                    <img src="img/4.png" class="article-image">
+                    <div class="article-content">
+                        <h2>DevOpsDays</h2>
+                        <p>
+                            It is a series of technical conferences held around the world for developers, system
+                            administrators and DevOps
+                            professionals. These conferences provide an opportunity for developers and software engineers to
+                            share experiences and
+                            new ideas, as well as learn new technologies and tools.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+            <div class="informer">
+                <div id="minfin-informer-m1Fn-region"><iframe width="275" height="120" frameborder="0" src="https://informer.minfin.com.ua/ua/gen/region/35/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true" style="width:275px;height:120px;overflow:hidden;"></iframe></div>
+                <script>var iframe = '<ifra' + 'me width="275" height="120" fram' + 'eborder="0" src="https://informer.minfin.com.ua/ua/gen/region/35/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:275px;height:120px;ove' + 'rflow:hidden;"></iframe>'; var cl = 'minfin-informer-m1Fn-region'; document.getElementById(cl).innerHTML = iframe;</script>
+                <noscript><img src="https://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курси валют" title="Exchange rate on the market" border="0" /></noscript>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Interesting.</p>
+    </footer>
+</body>
+<div id="custommenu" style="width: 250px; height: 80px;visibility: hidden;">
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+         onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+         onclick="doAction('copy');">
+        Copy the content of the document
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+         onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+         onclick="doAction('close');">
+        Close the window
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+         onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+         onclick="doAction('fontIncrease');">
+        Increase font size
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+         onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+         onclick="doAction('fontDecrease');">
+        Reduce font size
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+         onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+         onclick="doAction('changeBkg');">
+        Change the background
+    </div>
+</div>
+</html>

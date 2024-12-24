@@ -1,0 +1,168 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cont{
+    grid-template-columns: auto auto auto;
+    display: grid;
+    background-color: #336699;
+    color: #fff;
+}
+
+.item{
+}
+.item_1{
+}
+.item_2{
+}
+.item_3{
+}
+
+.profile img {
+    height: 130px;
+    margin: 10px 15px;
+}
+
+.header-text {
+    font-size: 16px;
+    margin: 15px 0 0 0;
+    padding: 0 0 0 0px;
+    float: left;
+}
+
+.header-images {
+    margin: 10px 0 0 0;
+    text-align: right;
+}
+
+.header-images img {
+    height: 50px;
+    margin: 0 10px;
+}
+
+.header-menu {
+    margin-top: 10px;
+}
+
+.header-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.header-menu li {
+    float: left;
+}
+
+.header-menu li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.header-menu li a:hover {
+    background-color: #123456;
+}
+
+.header-images img:first-child {
+    margin-right: 20px;
+}
+
+.header-images img:last-child {
+    margin-right: 20;
+}
+
+.header-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 5px 0;
+}
+
+.header-menu li {
+    margin: 0 10px;
+}
+
+.header-menu li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.content {
+    background-color: #fff;
+    width: 65%;
+    margin: 0px auto 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.content h2 {
+    text-align: center;
+    margin: 0;
+}
+
+.content p {
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+.ad-block{
+    display: inline-block;
+    text-align: center;
+    width: 29%;
+    height: 75px;
+    background-color: #ccc;
+    margin-top: 50px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+.informer{
+    display: grid;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+footer {
+    background-color: #336699;
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 767px){
+    .profile img {
+    height: 80px;
+    }
+    .header-images img {
+    height: 30px;
+    }
+    .content{
+    margin-bottom: 55px;
+    }    
+}

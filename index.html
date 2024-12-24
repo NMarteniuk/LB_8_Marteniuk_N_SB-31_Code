@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"></script>
+</head>
+<body oncontextmenu="showCustomMenu(true,event.clientX, event.clientY); return false;" onclick="handleClick(event);">
+    <header>
+        <div class="cont">
+            <div class="item item_1">
+                <div class="profile">
+                    <img src="img/profile.jpg" 
+                    onmouseover='this.src="img/profile1.jpg"'
+                    onmouseout='this.src="img/profile.jpg"' alt="Profile">
+                </div>
+            </div>
+
+            <div class="item item_2">
+                <p class="header-text">Ternopil Ivan Pulyuy National Technical University<br>Faculty of computer and information systems and software engineering<br>Department of cyber security<br><br>Personal page<br>Nazar Marteniuk<br>Group SB-31</p>            
+            </div>
+
+            <div class="item item_3">
+                <div class="header-images">
+                    <img src="img/TNTU_Logo.png" alt="Image 1">
+                    <img src="img/FIS_Logo.jpg" alt="Image 2">
+                    <img src="img/Kaf_Logo.jpg" alt="Image 3">
+                </div>
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="index.html" class="btn">Main</a></li>
+                        <li><a href="biography.html" class="btn">Biography</a></li>
+                        <li><a href="group.html" class="btn">My group</a></li>
+                        <li><a href="hobby.html" class="btn">Hobby</a></li>
+                        <li><a href="interesting.html" class="btn">Interesting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="content-color">
+        <div class="content">
+            <h1>
+                Main
+            </h1>
+            <div class="Biography">
+                Biography
+                <a href="biography.html">More details >></a>
+            </div>
+            <div class="Group">
+                Group
+                <a href="group.html">More details >></a>
+            </div>
+            <div class="hobby">
+                <div>
+                    Football
+                    <a href="hobby.html">More details >></a>
+                </div>
+                <div>
+                    Reading
+                    <a href="hobby.html">More details >></a>
+                </div>
+                <div>
+                    Chess
+                    <a href="hobby.html">More details >></a>
+                </div>
+
+            </div>
+            <div class="interes">
+                <div>
+                    GitHub Sponsors
+                    <a href="interesting.html">More details >></a>
+                </div>
+                <div>
+                    Hacktoberfest
+                    <a href="interesting.html">More details >></a>
+                </div>
+                <div>
+                    DevOpsDays
+                    <a href="interesting.html">More details >></a>
+                </div>
+            </div>
+            <!--
+            <div class="informer">
+                <iframe src="https://te.20minut.ua/" frameborder="0" scrolling="no" width="600" height="600"></iframe><br>
+                <input type="text" id="myInput" onkeypress="return checkSymbol(event.keyCode)">
+            </div>
+            -->
+            <div class="bottom-ads">
+                <div class="ad-block">Place for advertising</div>
+                <div class="ad-block">Place for advertising</div>
+                <div class="ad-block">Place for advertising</div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p>© 2024 Main.</p>
+        </footer>
+</body>
+<div id="custommenu" style="width: 250px; height: 80px;visibility: hidden;">
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('copy');">
+        Copy the content of the document
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('close');">
+        Close the window
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('fontIncrease');">
+        Increase font size
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('fontDecrease');">
+        Reduce font size
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('changeBkg');">
+        Change the background
+    </div>
+</div>
+</html>

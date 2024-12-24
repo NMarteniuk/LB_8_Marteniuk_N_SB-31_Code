@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hobby</title>
+    <link rel="stylesheet" href="hobby_style.css">
+    <script src="function.js"></script>
+</head>
+<body oncontextmenu="showCustomMenu(true,event.clientX, event.clientY); return false;" onclick="handleClick(event);">
+    <header>
+        <div class="cont">
+            <div class="item item_1">
+                <div class="profile">
+                    <img src="img/profile.jpg" alt="Profile">
+                </div>
+            </div>
+
+            <div class="item item_2">
+                <p class="header-text">Ternopil Ivan Pulyuy National Technical University<br>Faculty of computer and information systems and software engineering<br>Department of cyber security<br><br>Personal page<br>Nazar Marteniuk<br>Group SB-31</p>
+            </div>
+
+            <div class="item item_3">
+                <div class="header-images">
+                    <img src="img/TNTU_Logo.png" alt="Image 1">
+                    <img src="img/FIS_Logo.jpg" alt="Image 2">
+                    <img src="img/Kaf_Logo.jpg" alt="Image 3">
+                </div>
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="index.html" class="btn">Main</a></li>
+                        <li><a href="biography.html" class="btn">Biography</a></li>
+                        <li><a href="group.html" class="btn">My group</a></li>
+                        <li><a href="hobby.html" class="btn">Hobby</a></li>
+                        <li><a href="interesting.html" class="btn">Interesting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content-color">
+        <div class="content">
+            <h1>Hobby</h1>
+            <div class="container">
+                <div class="column">
+                    <h2>Football</h2>
+                    <p>
+                        Soccer is a team game in which players compete to score goals into the opponent's goal using only their
+                        feet. This game
+                        is very popular all over the world, with millions of fans and players. You can play football both on the
+                        street with
+                        friends and in stadiums in official matches. It helps develop coordination, speed, endurance and
+                        teamwork.
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Reading</h2>
+                    <p>
+                        Reading is the process of taking in the sense or meaning of symbols, often specifically those of a
+                        written language, by
+                        means of sight or touch.
+                    </p>
+                </div>
+                <div class="column">
+                    <h2>Chess</h2>
+                    <p>Chess is an abstract strategy game that involves no hidden information and no elements of chance.</p>
+                </div>
+                <div class="advertisement">
+                    <h2>Advertising</h2>
+                    <p>Place for advertising</p>
+                </div>
+                <div class="informer">
+                    <script type="text/javascript">var css_file = document.createElement("link"); css_file.setAttribute("rel", "stylesheet"); css_file.setAttribute("type", "text/css"); css_file.setAttribute("href", "https://s.bookcdn.com//css/cl/bw-cl-150x100t.css?v=0.0.1"); document.getElementsByTagName("head")[0].appendChild(css_file);</script> <div id="tw_8_127319387"><div style="width:150px; height:100px; margin: 0 auto;"><a href="https://hotelmix.com.ua/time/ternopil-53963">Тернопіль</a><br /></div></div>
+                    <script type="text/javascript">function setWidgetData_127319387(data) { if (typeof (data) != 'undefined' && data.results.length > 0) { for (var i = 0; i < data.results.length; ++i) { var objMainBlock = ''; var params = data.results[i]; objMainBlock = document.getElementById('tw_' + params.widget_type + '_' + params.widget_id); if (objMainBlock !== null) objMainBlock.innerHTML = params.html_code; } } } var clock_timer_127319387 = -1; widgetSrc = "https://widgets.booked.net/time/info?ver=2;domid=966;type=8;id=127319387;scode=45766;city_id=53963;wlangid=29;mode=1;details=0;background=rgba(0,0,0,0.6);border_color=ffffff;color=ffffff;add_background=ffffff;add_color=ffffff;head_color=ffffff;border=0;transparent=1"; var widgetUrl = location.href; widgetSrc += '&ref=' + widgetUrl; var wstrackId = ""; if (wstrackId) { widgetSrc += ';wstrackId=' + wstrackId + ';' } var timeBookedScript = document.createElement("script"); timeBookedScript.setAttribute("type", "text/javascript"); timeBookedScript.src = widgetSrc; document.body.appendChild(timeBookedScript);</script>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p>© 2024 Hobby.</p>
+        </footer>
+</body>
+<div id="custommenu" style="width: 250px; height: 80px;visibility: hidden;">
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('copy');">
+        Copy the content of the document
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('close');">
+        Close the window
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('fontIncrease');">
+        Increase font size
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('fontDecrease');">
+        Reduce font size
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('changeBkg');">
+        Change the background
+    </div>
+</div>
+</html>

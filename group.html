@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My group</title>
+    <link rel="stylesheet" href="group_style.css">
+    <script src="function.js"></script>
+</head>
+<body oncontextmenu="showCustomMenu(true,event.clientX, event.clientY); return false;" onclick="handleClick(event);">
+    <header>
+        <div class="cont">
+            <div class="item item_1">
+                <div class="profile">
+                    <img src="img/profile.jpg" alt="Profile">
+                </div>
+            </div>
+
+            <div class="item item_2">
+                <p class="header-text">Ternopil Ivan Pulyuy National Technical University<br>Faculty of computer and information systems and software engineering<br>Department of cyber security<br><br>Personal page<br>Nazar Marteniuk<br>Group SB-31</p>
+            </div>
+
+            <div class="item item_3">
+                <div class="header-images">
+                    <img src="img/TNTU_Logo.png" alt="Image 1">
+                    <img src="img/FIS_Logo.jpg" alt="Image 2">
+                    <img src="img/Kaf_Logo.jpg" alt="Image 3">
+                </div>
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="index.html" class="btn">Main</a></li>
+                        <li><a href="biography.html" class="btn">Biography</a></li>
+                        <li><a href="group.html" class="btn">My group</a></li>
+                        <li><a href="hobby.html" class="btn">Hobby</a></li>
+                        <li><a href="interesting.html" class="btn">Interesting</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content-color">
+        <div class="content">
+            <h2>Information about the group</h2>
+            <p>Students:</p>
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+                <div style=" padding: 0 10px;">
+                    <p1>1. Антонов Роман<br>2. Балахмей Лілія<br>3. Білик Андрій<br>4. Бунько Андрій<br>5. Ваврічен Вікторія<br>6. Ганущак Віталій<br>7. Гецко Дмитро<br>8. Гладчук Олександр<br>9. Голота Андрій<br>10. Городніцький Владислав<br>11. Єгоров Олександр<br>12. Желізняк Діана</p1>
+                </div>
+                <div style="padding: 0 10px;">
+                    <p1>13. Зимний Марко<br>14. Ковальчук Олеся<br>15. Колбаєв Петро<br>16. Колісник Назар<br>17. Мартенюк Назар<br>18. Наконечний Богдан<br>19. Панашій Тарас<br>20. Рибін Антон<br>21. Сорока Артур<br>22. Федунчик Назар<br>23. Хабурський Максим<br>24. Шалай Максим</p1>
+                </div>
+            </div>
+            <div class="informer">
+                <script src="https://pogoda.meta.ua/informers/get/ukraine/ternopilska/ternopilskyi/ternopil/?count_days=1&current_weather=1&description=1&humidity=1&pressure=1&wind=1&extended_forecast=by_hours&theme=light&width=300&border_radius=16&background_color=%23FFFFFF&border_color=%23FFFFFF&main_color=%231C2130&additional_color=%23366682&divider_color=%233666821f&shadow=1&lang=ua&size=m"></script>
+            </div>
+            <div class="bottom-ads">
+                <div class="ad-block">Place for advertising</div>
+                <div class="ad-block">Place for advertising</div>
+                <div class="ad-block">Place for advertising</div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p>© 2024 My group.</p>
+        </footer>
+</body>
+<div id="custommenu" style="width: 250px; height: 80px;visibility: hidden;">
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('copy');">
+        Copy the content of the document
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('close');">
+        Close the window
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('fontIncrease');">
+        Increase font size
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('fontDecrease');">
+        Reduce font size
+    </div>
+    <div style="background-Color: black; color: rgb(201, 0, 3); font-Size: 10pt;"
+        onmouseover="this.style.border='1px solid black';" onmouseout="this.style.border='none';"
+        onclick="doAction('changeBkg');">
+        Change the background
+    </div>
+</div>
+</html>
